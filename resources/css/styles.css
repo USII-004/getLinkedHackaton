@@ -1,0 +1,153 @@
+/* =============== GOOGLE FONTS =============== */
+/*===== Montserrat =====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/* =============== UPLOADED FONT =============== */
+/*===== Clash Display =====*/
+@import url('/asset/css/clash-display.css');
+
+
+
+/* =============== VARIABLE CSS =============== */
+:root {
+  --header-height: 3rem;
+
+  /* ========== Colors ========== */
+  --first-color: hsl(266, 100%, 61%);
+  --second-color: hsl(288, 99%, 60%);
+  --assent-color: hsl(319, 100%, 57%);
+  --body-color: hsl(256, 48%, 11%);
+  --text-color: hsl(0, 0%, 100%);
+  --linear-gradient: linear-gradient(90deg,var(--assent-color), var(--second-color), var(--first-color));
+  --linear-gradient-hover: linear-gradient(90deg,var(--first-color), var(--second-color), var(--assent-color));
+
+
+  /* ========== Fonts and typography ========== */
+  --body-font: 'Montserrat', sans-serif;
+  --title-font: 'ClashDisplay-Bold';
+
+  /* .125rem = 2px, .25rem = 4px, .5rem = 8px, 1rem = 16px ... */
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --hero-text-font-size: 1.25rem;
+  --normal-font-size: .875rem;
+  --small-font-size: .75rem;
+
+
+  /* ========== Font weight ========== */
+  /* only applies to google font */
+  --font-medium: 400;
+  --font-bold: 700;
+
+  /* ========== Z Index ========== */
+
+}  
+
+
+
+/* ========== Font size for large devices ========== */  
+
+/* =============== BASE =============== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color); 
+}
+
+h1, h2 {
+  font-family: var(--title-font);
+}
+
+span {
+  color: var(--second-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+/* ========== REUSABLE CSS CLASSES ========== */
+.section {
+  padding: 2rem 5rem;
+}
+
+.horizontal__rule {
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  margin-top: 2.5rem;
+}
+
+/* ========== LAYOUT ========== */
+header {
+  padding: 2rem 5rem 1rem 5rem;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========== NAV ========== */
+.nav__logo {
+  float: left;
+}
+
+.nav__menu {
+  float: right;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+.nav__link {
+  padding-bottom: .5rem;
+  border-radius: .25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .5s;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--first-color);
+}
+
+/* ========== HOME ========== */
+
+/* ========== BUTTONS ========== */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: var(--font-medium);
+  background: var(--linear-gradient);
+  border-radius: .125rem;
+  transition: background 1s;
+}
+
+.btn:hover {
+  background: var(--first-color);
+}
