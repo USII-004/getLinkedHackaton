@@ -443,7 +443,7 @@ header {
 
 /* ========== CRITERIA ========== */
 .criteria {
-  height: 100vh;
+  height: 135vh;
   padding: 4rem 3rem 1rem 4rem;
   grid-template-columns: 1fr 1fr; 
 }
@@ -526,3 +526,128 @@ header {
   top: 130rem;
   left: -7rem;
 }
+
+/* ========== FAQS ========== */
+.faqs {
+  height: 100vh;
+  padding: 1rem 5rem;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.faqs__img__container {
+  width: 85%;
+}
+
+.faqs__img {
+  width: 100%;
+  margin: 8rem 2rem;
+  padding-right: 5rem;
+}
+
+.faqs__img__star1 {
+  position: absolute;
+  top: 212rem;
+  right: 16rem;
+  width: 1.4%;
+}
+
+.faqs__img__star2 {
+  position: absolute;
+  top: 175rem;
+  right: 23rem;
+  width: 1.3%;
+}
+
+.faqs__img__star3 {
+  position: absolute;
+  top: 185rem;
+  right: 34rem;
+  width: 1.1%;
+}
+
+.faqs__img__star4 {
+  position: absolute;
+  top: 196rem;
+  right: 37rem;
+  width: 1.3%;
+}
+
+.question__mark__image1 {
+  position: absolute;
+  top: 174rem;
+  right: 26rem;
+  animation: shake 5s ease-in-out;
+  animation-iteration-count: infinite; 
+  animation-delay: 10s;
+}
+
+.question__mark__image2 {
+  position: absolute;
+  top: 178rem;
+  right: 20rem;
+  width: 2%;
+  animation: shake 8s ease-in-out;
+  animation-iteration-count: infinite; 
+  animation-delay: 10s;
+}
+
+.question__mark__image3 {
+  position: absolute;
+  top: 177rem;
+  right: 33rem;
+  width: 2.2%;
+  animation: shake 10s ease-in-out;
+  animation-iteration-count: infinite; 
+  animation-delay: 10s;
+}
+
+.faqs__text__container {
+  padding: 8rem 6rem 4rem 7rem;
+}
+
+.faqs__title {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  margin: 2rem 0;
+}
+
+.faqs__description {
+  line-height: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.faqs__text__star {
+  position: absolute;
+  top: 178rem;
+  left: 11rem;
+}
+
+.faqs__question__container {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  justify-content: space-between;
+}
+
+.faqs__question {
+  font-size: var(--small-font-size);
+}
+
+.faqs__hr {
+  background-color: var(--second-color);
+}
+
+.faqs__icons {
+  width: 1rem;
+  color: var(--second-color);
+}
+
+.plus__icon {
+  width: 4%;
+}
+
+.sixth__flare {
+  position: absolute;
+  top: 149rem;
+  right: -2rem;
+}
+
