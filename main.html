@@ -6,7 +6,7 @@
   <title>Get Linked Competition</title>
 
   <!-- =============== CSS =============== -->
-  <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/asset/css/styles.css">
 
   <!-- =============== UNICONS =============== -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/3.0.6/css/line.css">
@@ -31,7 +31,7 @@
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">FAQs</a>
+            <a href="#faqs" class="nav__link">FAQs</a>
           </li>
 
           <li class="nav__item">
@@ -66,10 +66,21 @@
 
       <!-- Countdown timer -->
       <div class="countdown">
-        <div class="timer">
-          <p class="timer__text timer__hours" id="hours">00<span class="timer__unit">H</span></p>
-          <p class="timer__text timer__minutes" id="minutes">00<span class="timer__unit">M</span></p>
-          <p class="timer__text timer__seconds" id="seconds">00<span class="timer__unit">S</span></p>
+        <div class="timer flex">
+          <div class="hour__container timer__text__container flex">
+            <p class="timer__text timer__hours" id="hours">00</p>
+            <span class="timer__unit">H</span>
+          </div>
+          
+          <div class="minute__container timer__text__container flex">
+            <p class="timer__text timer__minutes" id="minutes">00</p>
+            <span class="timer__unit">M</span>
+          </div>
+
+          <div class="second__container timer__text__container flex">
+            <p class="timer__text timer__seconds" id="seconds">00</p>
+            <span class="timer__unit">S</span>
+          </div>
         </div>
       </div>
 
@@ -324,6 +335,8 @@
 
   </section>
 
+  <!-- =============== JAVASCRIPT =============== -->
+  <script src="/asset/javascript/main.js"></script>
   
 </body>
 </html>
