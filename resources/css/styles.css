@@ -110,6 +110,32 @@ img {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+
+/* Keyframes */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); } /* Start at the original position */
+  25% { transform: translateX(-5px) rotate(5deg); } /* Move left and rotate slightly */
+  50% { transform: translateX(5px) rotate(-5deg); } /* Move right and rotate slightly */
+  75% { transform: translateX(-5px) rotate(5deg); } /* Move left and rotate slightly */
+  100% { transform: translateX(0); } /* Return to the original position */
+}
+
+
+
 /* ========== LAYOUT ========== */
 header {
   padding: 2rem 8rem 1rem 8rem;
@@ -151,7 +177,6 @@ header {
   top: 15rem;
   left: 42rem;
 }
-
 
 /* ========== NAV ========== */
 .home {
@@ -240,7 +265,10 @@ header {
   right: 3rem;
   opacity: .75;
   filter: hue-rotate(355deg); /* i'm just learning bout this filter property today */
+  animation: rotate 100s linear infinite;  /* rotate blue image */
 }
+
+
 
 .countdown {
   font-size: var(--timer-font-size);
@@ -278,5 +306,51 @@ header {
 
 /* ========== INTRODUCTION ========== */
 .introduction {
-  height: 100vh;
+  height: 80vh;
+  padding: 3rem 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.intro__img__container {
+  width : 75%;
+}
+
+.intro__img {
+  width: 100%;
+  margin: 2rem 7rem;
+  animation: shake 5s ease-in-out;
+  animation-iteration-count: infinite; 
+  animation-delay: 10s;
+}
+
+.intro__img__star {
+  position: relative;
+  top: -30rem;
+  left: 2rem;
+}
+
+.arrow__svg {
+  position: relative;
+  left: 33rem;
+  top: -5.5rem;
+}
+
+.intro__text__container {
+  margin: 8rem .5rem 8rem 6rem;
+}
+
+.introduction__title {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  margin: 2rem 0;
+}
+
+.introduction__description {
+  line-height: 1.7rem;
+}
+
+.intro__text__star {
+  position: relative;
+  top: -14rem;
+  left: 25rem;
 }
