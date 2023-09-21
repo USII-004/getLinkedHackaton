@@ -69,7 +69,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color); 
+  color: var(--text-color);
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -97,7 +98,8 @@ img {
 /* ========== REUSABLE CSS CLASSES ========== */
 .section {
   padding: 4rem 2rem 4rem 8rem;
-  max-height: fit-content;
+  max-height: max-content;
+  max-width: 100%;
 }
 
 .horizontal__rule {
@@ -121,19 +123,30 @@ img {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
   }
 
 }
 
 @keyframes shake {
   0% { transform: translateX(0); } /* Start at the original position */
-  25% { transform: translateX(-5px) rotate(5deg); } /* Move left and rotate slightly */
-  50% { transform: translateX(5px) rotate(-5deg); } /* Move right and rotate slightly */
-  75% { transform: translateX(-5px) rotate(5deg); } /* Move left and rotate slightly */
+  25% { transform: translateX(-.5px) rotate(2deg); } /* Move left and rotate slightly */
+  50% { transform: translateX(.5px) rotate(-2deg); } /* Move right and rotate slightly */
+  75% { transform: translateX(-.5px) rotate(2deg); } /* Move left and rotate slightly */
   100% { transform: translateX(0); } /* Return to the original position */
 }
 
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
 
 
 /* ========== LAYOUT ========== */
@@ -163,8 +176,8 @@ header {
 
 .second__flare {
   position: absolute;
-  top: 3rem; 
-  right: 3rem;
+  top: 2rem; 
+  right: 14rem;
   z-index: -5;
 }
 
@@ -175,7 +188,7 @@ header {
   z-index: -1;
   position: absolute;
   top: 15rem;
-  left: 42rem;
+  right: 2rem;
 }
 
 /* ========== NAV ========== */
@@ -262,13 +275,12 @@ header {
   z-index: 10;
   position: absolute;
   top: 10rem;
-  right: 3rem;
+  right: 2.5rem;
   opacity: .75;
   filter: hue-rotate(355deg); /* i'm just learning bout this filter property today */
   animation: rotate 100s linear infinite;  /* rotate blue image */
+  
 }
-
-
 
 .countdown {
   font-size: var(--timer-font-size);
@@ -306,7 +318,7 @@ header {
 
 /* ========== INTRODUCTION ========== */
 .introduction {
-  height: 80vh;
+  height: 100vh;
   padding: 3rem 5rem;
   grid-template-columns: 1fr 1fr;
 }
@@ -326,7 +338,7 @@ header {
 .intro__img__star {
   position: relative;
   top: -30rem;
-  left: 2rem;
+  right: 2rem;
 }
 
 .arrow__svg {
@@ -336,7 +348,7 @@ header {
 }
 
 .intro__text__container {
-  margin: 8rem .5rem 8rem 6rem;
+  padding: 8rem .5rem 8rem 6rem;
 }
 
 .introduction__title {
@@ -353,4 +365,67 @@ header {
   position: relative;
   top: -14rem;
   left: 25rem;
+}
+
+/* ========== RULES ========== */
+.rules {
+  height: 80vh;
+  padding: 1rem 5rem;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.rules__img__container {
+  width: 95%;
+}
+
+.rules__img {
+  width: 100%;
+  margin: 1rem 5rem;
+}
+
+.rules__img__star {
+  position: absolute;
+  top: 110rem;
+  right: 37rem;
+  animation: fadeInOut 10s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+.rules__text__container {
+  padding: 8rem 2rem 4rem 7rem;
+}
+
+.rules__title {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  margin: 2rem 0;
+}
+
+.rules__description {
+  line-height: 1.7rem;
+}
+
+.rules__text__star {
+  position: absolute;
+  top: 94rem;
+  left: 25rem;
+  animation: fadeInOut 10s ease-in-out infinite;
+}
+
+.third__flare {
+  position: absolute;
+  top: 65rem;
+  left: 4rem;
+  height: 90%;
+  width: 50%;
+  z-index: -10;
+}
+
+.forth__flare {
+  position: absolute;
+  top: 95rem;
+  right: -15rem;
+  height: 40%;
+  width: 40%;
+  z-index: -10;
 }
