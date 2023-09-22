@@ -534,7 +534,7 @@ header {
 
 /* ========== FAQS ========== */
 .faqs {
-  height: 100vh;
+  height: 125vh;
   padding: 1rem 5rem;
   grid-template-columns: 1fr 1fr; 
 }
@@ -656,4 +656,45 @@ header {
   right: -2rem;
 }
 
+/* ========== TIMELINE ========== */
+.timeline {
+  height: 100vh;
+  padding: 5rem 16rem;
+}
 
+.timeline__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 5rem;
+  align-items: center;
+}
+
+.start__align {
+  justify-items: start;
+}
+
+.end__align {
+  justify-items: end;
+}
+
+.timeline__rounder {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+  background: var(--linear-gradient);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+}
+
+.timeline__line {
+  display: block;
+  width: 3px;
+  height: 10%;
+  /* padding: 2rem 0; */
+  background-color: var(--second-color);
+  /* transform: translate(15px, -7px); */
+}
