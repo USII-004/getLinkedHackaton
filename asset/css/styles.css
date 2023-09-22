@@ -19,6 +19,7 @@
   --assent-color: hsl(319, 100%, 57%);
   --lens-flare-color: hsla(288, 99%, 60%, 0.3);
   --body-color: hsl(256, 48%, 11%);
+  --darker-body-color: hsl(256, 68%, 9%);
   --text-color: hsl(0, 0%, 100%);
   --linear-gradient: linear-gradient(90deg,var(--assent-color), var(--second-color), var(--first-color));
   --linear-gradient-hover: linear-gradient(90deg,var(--first-color), var(--second-color), var(--assent-color));
@@ -658,7 +659,7 @@ header {
 
 /* ========== TIMELINE ========== */
 .timeline {
-  height: 100vh;
+  height: 145vh;
   padding: 5rem 16rem;
 }
 
@@ -754,4 +755,97 @@ header {
   top: 260rem;
   left: 19rem;
   width: 1.2%;
+}
+
+/* ========== PRIZES ========== */
+.prize {
+  grid-template-columns: 40% 60%;
+  background-color: var(--darker-body-color);
+  column-gap: 2rem;
+  height: 130vh;
+}
+
+.prize__cup__img__container {
+  width: 85%;
+  margin: 11rem 2rem 2rem 2rem;
+  z-index: 3;
+}
+
+.prize__cup__img {
+  width: 100%;
+  animation: shake 5s ease-in-out;
+  animation-iteration-count: infinite; 
+  animation-delay: 10s;
+}
+
+.prize__header {
+  margin: 1rem 6rem;
+  width: 50%;
+}
+
+.prize__title {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  margin: 1rem 0;
+}
+
+.prize__reward__img__container {
+  width: 80%;
+  margin: 3rem .5rem 0 .5rem;
+}
+
+.prize__left__star1 {
+  position: absolute;
+  top: 303rem;
+  left: 32rem;
+  width: 1.2%;
+}
+
+.prize__left__star2 {
+  position: absolute;
+  top: 310rem;
+  left: 20rem;
+  width: 0.8%;
+}
+
+.prize__left__star3 {
+  position: absolute;
+  top: 279rem;
+  left: 20rem;
+  width: 1.1%;
+}
+
+.prize__right__star1 {
+  position: absolute;
+  top: 291rem;
+  right: 10rem;
+  width: 1.2%;
+}
+
+.prize__right__star2 {
+  position: absolute;
+  top: 285rem;
+  right: 40rem;
+  width: 1.2%;
+}
+
+.prize__right__star3 {
+  position: absolute;
+  top: 312rem;
+  right: 19rem;
+  width: 1.2%;
+}
+
+.seventh__flare {
+  position: absolute;
+  top: 268rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+.eight__flare {
+  position: absolute;
+  top: 278rem;
+  right: -16rem;
+  z-index: 2;
 }
