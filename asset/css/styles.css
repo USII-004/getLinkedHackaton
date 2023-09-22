@@ -849,3 +849,62 @@ header {
   right: -16rem;
   z-index: 2;
 }
+
+.partners {
+  padding: 2rem;
+}
+
+.partners__header {
+  width: 40%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.partners__heading {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.partners__subtext {
+  line-height: 1.5rem;
+}
+
+.partners__img__container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.partners__star1 {
+  position: absolute;
+  top: 353rem;
+  right: 38rem;
+  width: 1.2%;
+}
+
+.partners__star2 {
+  position: absolute;
+  top: 336rem;
+  right: 38rem;
+  width: .9%;
+}
+
+.partners__star3 {
+  position: absolute;
+  top: 328rem;
+  left: 15rem;
+  width: 1.3%;
+}
+
+
+.ninth__flare {
+  position: absolute;
+  top: 310rem;
+  left: -8rem;
+}
+
+.tenth__flare {
+  position: absolute;
+  top: 333rem;
+  right: -8rem;
+}
