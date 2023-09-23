@@ -1,5 +1,4 @@
 /*========== COUNTDOWN TIMER ==========*/
-// script.js
 function countdown() {
   const countdownDate = new Date("2023-09-24 00:00:00").getTime(); // Set your target date and time here
   const timer = setInterval(function() {
@@ -25,4 +24,23 @@ function countdown() {
 }
 
 countdown();
+
+/*========== STICKY NAV ==========*/
+window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("nav");
+    const section2 = document.getElementById("introduction");
+    const section2Top = section2.getBoundingClientRect().top;
+
+    const offset = section2.clientHeight * 0.05;
+  
+    if (section2Top <= offset) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+    
+});
+
+/* how to make the section2 offset by 25% before the section top */ 
+  
 
