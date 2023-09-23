@@ -15,15 +15,13 @@
 <body>
   <!-- =============== HEADER =============== -->
   <header class="header" id="header">
+    
     <nav class="nav container" id="nav">
-      <a href="#home" class="nav__logo">
-        <h1>get<span>linked</span></h1>
-      </a>
-
-      <div class="nav__btn">
-        <i class="uil uil-bars"></i>
-      </div>
-
+      <div class="logo__container"></div>
+        <a href="#home" class="nav__logo">
+          <h1>get<span>linked</span></h1>
+        </a>
+      </div> 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -47,6 +45,9 @@
           </li>
         </ul>
       </div>
+      <div class="nav__btn">
+        <i class="uil uil-bars"></i>
+      </div>
     </nav>
 
   </header>
@@ -57,54 +58,54 @@
   <!-- =============== HOME =============== -->
   <section class="home section" id="home">
     <img src="/asset/images/Purple-Lens-Flare-PNG.png" class="purple__lens__flare" alt="background purple lens flare">
-    <div class="hero__left">
+    
+    <div class="subtitle__container">
+      <p class="hero__subtitle">Igniting a Revolution in the HR Innovation</p>
+      <img src="/asset/images/Vector 4.png" alt="underline vector" class="underline__vector">
+    </div>
+
+    <div class="main__title">
       <img src="/asset/images/Title.png" class="title__img" alt="Title text">
+    </div>
 
+    <div class="subtext__container">
       <p class="hero__text">Participate in getlinked tech hackathon 2023 stand 
-        <br>a chance to win Big prize
+        a chance to win Big prize
       </p>
-
+  
       <a href="#" class="btn hero__btn">Register</a>
+    </div>
+    <!-- Countdown timer -->
+    <div class="countdown">
+      <div class="timer flex">
+        <div class="hour__container timer__text__container flex">
+          <p class="timer__text timer__hours" id="hours">00</p>
+          <span class="timer__unit">H</span>
+        </div>
+        
+        <div class="minute__container timer__text__container flex">
+          <p class="timer__text timer__minutes" id="minutes">00</p>
+          <span class="timer__unit">M</span>
+        </div>
 
-
-
-      <!-- Countdown timer -->
-      <div class="countdown">
-        <div class="timer flex">
-          <div class="hour__container timer__text__container flex">
-            <p class="timer__text timer__hours" id="hours">00</p>
-            <span class="timer__unit">H</span>
-          </div>
-          
-          <div class="minute__container timer__text__container flex">
-            <p class="timer__text timer__minutes" id="minutes">00</p>
-            <span class="timer__unit">M</span>
-          </div>
-
-          <div class="second__container timer__text__container flex">
-            <p class="timer__text timer__seconds" id="seconds">00</p>
-            <span class="timer__unit">S</span>
-          </div>
+        <div class="second__container timer__text__container flex">
+          <p class="timer__text timer__seconds" id="seconds">00</p>
+          <span class="timer__unit">S</span>
         </div>
       </div>
-
     </div>
-    <div class="hero__right">
-      <p class="hero__subtitle">Igniting a Revolution in the HR Innovation</p>
 
-      <img src="/asset/images/Vector 4.png" alt="underline vector" class="underline__vector">
+    <!-- purple len flare -->
+    <img src="/asset/images/Purple-Lens-Flare-PNG.png" alt="Purple-Lens-Flare-PNG" class="purple__lens__flare second__flare">
 
-      <!-- purple len flare -->
-      <img src="/asset/images/Purple-Lens-Flare-PNG.png" alt="Purple-Lens-Flare-PNG" class="purple__lens__flare second__flare">
+    <!-- matrix -->
+    <img src="/asset/images/metrix 1.png" alt="background matrix" class="matrix">
 
-      <!-- matrix -->
-      <img src="/asset/images/metrix 1.png" alt="background matrix" class="matrix">
-
+    <div class="hero__img__container">
       <img src="/asset/images/man-wearing-smart-glasses-touching-virtual-screen 1.png" alt="hero image" class="hero__img">
-
-      <img src="/asset/images/Image 1.png" alt="blue image effect" class="blue__img__effect">
-
     </div>
+
+    <img src="/asset/images/Image 1.png" alt="blue image effect" class="blue__img__effect">
 
     <img src="/asset/images/star.png" alt="white star" class="white__star home__star1">
     <img src="/asset/images/star (b).png" alt="fading star" class="fading__star home__star2">
