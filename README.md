@@ -1,6 +1,6 @@
 # Getlinked pre Hackathon - getlinked UI website design solution
 
-This is a solution to the [getlinked UI website design challenge on Getlinked pre Hackathon](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).  
+This is a solution to the [getlinked UI website design challenge on Getlinked pre Hackathon].  
 
 ## Table of contents
 
@@ -30,14 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](./screenshots/Deskatop_view.jpeg)
 
-![Mobile view](./screenshots/Mobile_view.jpeg)
 
 ### Links
 
-- Solution URL: [Github repository](https://github.com/USII-004/frontend-mentor-nftPreviewCard)
-- Live Site URL: [Netlify](https://fmnpc.netlify.app/)
+- Solution URL: [Github repository](https://github.com/USII-004/getLinkedHackaton)
+- Live Site URL: [Netlify](https://getlinkedprehackathon.netlify.app/)
 
 ## My process
 
